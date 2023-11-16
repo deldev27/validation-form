@@ -15,11 +15,13 @@ function App() {
 		register,
 		handleSubmit,
 		formState: { errors },
+		reset,
 	} = useForm<FormValues>()
 
 	const onSubmit: SubmitHandler<FormValues> = data => {
 		setFormData(data)
 	}
+
 	console.log(formData)
 
 	// fetch('https://example.com/api/endpoint', {
@@ -79,7 +81,9 @@ function App() {
 					>
 						Show password
 					</button>
-					<button className='form__btn'>Login</button>
+					<button className='form__btn' onClick={() => reset()}>
+						Login
+					</button>
 				</div>
 			</form>
 		</div>
