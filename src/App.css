@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+	background: radial-gradient(
+		circle,
+		rgba(63, 158, 251, 1) 0%,
+		rgba(70, 202, 252, 1) 100%
+	);
+	font-family: 'Inter';
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	color: #fff;
+	font-size: 37px;
+	font-weight: 700;
+}
+
+.form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form__error-message {
+	color: red;
+	text-align: left;
+	font-size: 16px;
+}
+
+.form__input {
+	width: 400px;
+	font-size: 21px;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	background: none;
+	outline: none;
+	color: #fff;
+	font-weight: 400;
+	margin: 0px 0px 35px 0px;
+}
+
+.form__input::placeholder {
+	color: #fff;
+}
+
+.form__btn {
+	width: 150px;
+	height: 40px;
+	color: #3fa1fb;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 7px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+button[type='button'] {
+	margin: 0px 104px 0px 0px;
+}
